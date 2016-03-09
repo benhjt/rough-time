@@ -1,0 +1,19 @@
+{
+  "rules": {
+    "quotes": [2, "single"],
+    "semi": [2, "always"]
+  },
+  "env": {
+    "node": true,
+    "es6": true,
+    "mocha": true
+  },
+  "parserOptions": {,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "extends": "eslint:recommended"
+}

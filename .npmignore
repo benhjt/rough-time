@@ -1,0 +1,8 @@
+src
+test
+.babelrc
+.gitignore
+.travis.yml
+.codeclimate.yml
+.editorconfig
+.eslintrc

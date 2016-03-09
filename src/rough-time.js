@@ -33,7 +33,7 @@ class RoughTime {
 		} else if ((minutes >= 20 && minutes <= 24) || (minutes >= 40 && minutes <= 44)) {
 			return 'twenty';
 		} else if ((minutes >= 25 && minutes <= 29) || (minutes >= 35 && minutes <= 40)) {
-			return 'twentyfive';
+			return 'twenty-five';
 		} else {
 			return 'half';
 		}

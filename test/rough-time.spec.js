@@ -150,5 +150,93 @@ describe('RoughTime (unit)', () => {
     it('should return a String', () => {
       expect(roughtime._getMinutesString()).to.be.a('string');
     });
+
+    it('should return "five" when the minutes is between 5 and 9', () => {
+      assert.equal(roughtime._getMinutesString(5), 'five');
+      assert.equal(roughtime._getMinutesString(6), 'five');
+      assert.equal(roughtime._getMinutesString(7), 'five');
+      assert.equal(roughtime._getMinutesString(8), 'five');
+      assert.equal(roughtime._getMinutesString(9), 'five');
+    });
+
+    it('should return "ten" when the minutes is between 10 and 14', () => {
+      assert.equal(roughtime._getMinutesString(10), 'ten');
+      assert.equal(roughtime._getMinutesString(11), 'ten');
+      assert.equal(roughtime._getMinutesString(12), 'ten');
+      assert.equal(roughtime._getMinutesString(13), 'ten');
+      assert.equal(roughtime._getMinutesString(14), 'ten');
+    });
+
+    it('should return "quarter" when the minutes is between 15 and 19', () => {
+      assert.equal(roughtime._getMinutesString(15), 'quarter');
+      assert.equal(roughtime._getMinutesString(16), 'quarter');
+      assert.equal(roughtime._getMinutesString(17), 'quarter');
+      assert.equal(roughtime._getMinutesString(18), 'quarter');
+      assert.equal(roughtime._getMinutesString(19), 'quarter');
+    });
+
+    it('should return "twenty" when the minutes is between 20 and 24', () => {
+      assert.equal(roughtime._getMinutesString(20), 'twenty');
+      assert.equal(roughtime._getMinutesString(21), 'twenty');
+      assert.equal(roughtime._getMinutesString(22), 'twenty');
+      assert.equal(roughtime._getMinutesString(23), 'twenty');
+      assert.equal(roughtime._getMinutesString(24), 'twenty');
+    });
+
+    it('should return "twenty-five" when the minutes is between 25 and 29', () => {
+      assert.equal(roughtime._getMinutesString(25), 'twenty-five');
+      assert.equal(roughtime._getMinutesString(26), 'twenty-five');
+      assert.equal(roughtime._getMinutesString(27), 'twenty-five');
+      assert.equal(roughtime._getMinutesString(28), 'twenty-five');
+      assert.equal(roughtime._getMinutesString(29), 'twenty-five');
+    });
+
+    it('should return "half" when the minutes is between 30 and 34', () => {
+      assert.equal(roughtime._getMinutesString(30), 'half');
+      assert.equal(roughtime._getMinutesString(31), 'half');
+      assert.equal(roughtime._getMinutesString(32), 'half');
+      assert.equal(roughtime._getMinutesString(33), 'half');
+      assert.equal(roughtime._getMinutesString(34), 'half');
+    });
+
+    it('should return "twenty-five" when the minutes is between 35 and 39', () => {
+      assert.equal(roughtime._getMinutesString(35), 'twenty-five');
+      assert.equal(roughtime._getMinutesString(36), 'twenty-five');
+      assert.equal(roughtime._getMinutesString(37), 'twenty-five');
+      assert.equal(roughtime._getMinutesString(38), 'twenty-five');
+      assert.equal(roughtime._getMinutesString(39), 'twenty-five');
+    });
+
+    it('should return "twenty" when the minutes is between 40 and 44', () => {
+      assert.equal(roughtime._getMinutesString(40), 'twenty');
+      assert.equal(roughtime._getMinutesString(41), 'twenty');
+      assert.equal(roughtime._getMinutesString(42), 'twenty');
+      assert.equal(roughtime._getMinutesString(43), 'twenty');
+      assert.equal(roughtime._getMinutesString(44), 'twenty');
+    });
+
+    it('should return "quarter" when the minutes is between 45 and 49', () => {
+      assert.equal(roughtime._getMinutesString(45), 'quarter');
+      assert.equal(roughtime._getMinutesString(46), 'quarter');
+      assert.equal(roughtime._getMinutesString(47), 'quarter');
+      assert.equal(roughtime._getMinutesString(48), 'quarter');
+      assert.equal(roughtime._getMinutesString(49), 'quarter');
+    });
+
+    it('should return "ten" when the minutes is between 50 and 54', () => {
+      assert.equal(roughtime._getMinutesString(50), 'ten');
+      assert.equal(roughtime._getMinutesString(51), 'ten');
+      assert.equal(roughtime._getMinutesString(52), 'ten');
+      assert.equal(roughtime._getMinutesString(53), 'ten');
+      assert.equal(roughtime._getMinutesString(54), 'ten');
+    });
+
+    it('should return "five" when the minutes is between 55 and 59', () => {
+      assert.equal(roughtime._getMinutesString(55), 'five');
+      assert.equal(roughtime._getMinutesString(56), 'five');
+      assert.equal(roughtime._getMinutesString(57), 'five');
+      assert.equal(roughtime._getMinutesString(58), 'five');
+      assert.equal(roughtime._getMinutesString(59), 'five');
+    });
   });
 });

@@ -114,6 +114,10 @@ describe('RoughTime (unit)', () => {
 
   describe('_getMinutesSuffix', () => {
     let roughtime = new RoughTime();
+    let getRandomInt = function (min, max) {
+      return Math.floor(Math.random() * (max - min + 1) + min);
+    };
+
     it('should be a Function', () => {
       expect(roughtime._getMinutesSuffix).to.be.a('function');
     });
@@ -123,14 +127,14 @@ describe('RoughTime (unit)', () => {
     });
 
     for (let i = 0; i < 50; i++) {
-      let randomMinute = Math.floor(Math.random() * 34) + 1;
+      let randomMinute = getRandomInt(1, 34);
       it('should return " past " when minutes is ' + randomMinute, () => {
         assert.equal(roughtime._getMinutesSuffix(randomMinute), ' past ');
       });
     }
 
     for (let i = 0; i < 50; i++) {
-      let randomMinute = Math.floor(Math.random() * 59) + 35;
+      let randomMinute = getRandomInt(35, 59);
       it('should return " to " when minutes is ' + randomMinute, () => {
         assert.equal(roughtime._getMinutesSuffix(randomMinute), ' to ');
       });

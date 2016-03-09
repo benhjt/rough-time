@@ -61,52 +61,52 @@ describe('RoughTime (unit)', () => {
       assert.equal(roughtime._getHoursString(14), 'two');
     });
 
-    it('should return "two" when the hour is 3 or 15', () => {
+    it('should return "three" when the hour is 3 or 15', () => {
       assert.equal(roughtime._getHoursString(3), 'three');
       assert.equal(roughtime._getHoursString(15), 'three');
     });
 
-    it('should return "two" when the hour is 4 or 16', () => {
+    it('should return "four" when the hour is 4 or 16', () => {
       assert.equal(roughtime._getHoursString(4), 'four');
       assert.equal(roughtime._getHoursString(16), 'four');
     });
 
-    it('should return "two" when the hour is 5 or 17', () => {
+    it('should return "five" when the hour is 5 or 17', () => {
       assert.equal(roughtime._getHoursString(5), 'five');
       assert.equal(roughtime._getHoursString(17), 'five');
     });
 
-    it('should return "two" when the hour is 6 or 18', () => {
+    it('should return "six" when the hour is 6 or 18', () => {
       assert.equal(roughtime._getHoursString(6), 'six');
       assert.equal(roughtime._getHoursString(18), 'six');
     });
 
-    it('should return "two" when the hour is 7 or 19', () => {
+    it('should return "seven" when the hour is 7 or 19', () => {
       assert.equal(roughtime._getHoursString(7), 'seven');
       assert.equal(roughtime._getHoursString(19), 'seven');
     });
 
-    it('should return "two" when the hour is 8 or 20', () => {
+    it('should return "eight" when the hour is 8 or 20', () => {
       assert.equal(roughtime._getHoursString(8), 'eight');
       assert.equal(roughtime._getHoursString(20), 'eight');
     });
 
-    it('should return "two" when the hour is 9 or 21', () => {
+    it('should return "nine" when the hour is 9 or 21', () => {
       assert.equal(roughtime._getHoursString(9), 'nine');
       assert.equal(roughtime._getHoursString(21), 'nine');
     });
 
-    it('should return "two" when the hour is 10 or 22', () => {
+    it('should return "ten" when the hour is 10 or 22', () => {
       assert.equal(roughtime._getHoursString(10), 'ten');
       assert.equal(roughtime._getHoursString(22), 'ten');
     });
 
-    it('should return "two" when the hour is 11 or 23', () => {
+    it('should return "eleven" when the hour is 11 or 23', () => {
       assert.equal(roughtime._getHoursString(11), 'eleven');
       assert.equal(roughtime._getHoursString(23), 'eleven');
     });
 
-    it('should return "two" when the hour is 0 or 12', () => {
+    it('should return "twelve" when the hour is 0 or 12', () => {
       assert.equal(roughtime._getHoursString(0), 'twelve');
       assert.equal(roughtime._getHoursString(12), 'twelve');
     });

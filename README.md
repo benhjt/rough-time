@@ -24,6 +24,8 @@ let approxTimeString = roughtime.getRoughTime(new Date());
 ```
 
 ### Example output
-> it is ten past two
-> it is quarter to twelve
-> it is three o'clock
+`02:12` or `14:12` > `it is ten past two`
+
+`11:46` or `23:46` > `it is quarter to twelve`
+
+`03:01` or `15:01` > `it is three o'clock` etc.

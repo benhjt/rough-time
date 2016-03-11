@@ -24,15 +24,15 @@ class RoughTime {
 	}
 
 	_getMinutesString(minutes) {
-		if ((minutes >= 5 && minutes <= 9) || (minutes >= 55 && minutes <= 59)) {
+		if ((minutes >= 3 && minutes <= 7) || (minutes >= 53 && minutes <= 57)) {
 			return 'five';
-		} else if ((minutes >= 10 && minutes <= 14) || (minutes >= 50 && minutes <= 54)) {
+		} else if ((minutes >= 8 && minutes <= 12) || (minutes >= 48 && minutes <= 52)) {
 			return 'ten';
-		} else if ((minutes >= 15 && minutes <= 19) || (minutes >= 45 && minutes <= 49)) {
+		} else if ((minutes >= 13 && minutes <= 17) || (minutes >= 43 && minutes <= 47)) {
 			return 'quarter';
-		} else if ((minutes >= 20 && minutes <= 24) || (minutes >= 40 && minutes <= 44)) {
+		} else if ((minutes >= 18 && minutes <= 22) || (minutes >= 38 && minutes <= 42)) {
 			return 'twenty';
-		} else if ((minutes >= 25 && minutes <= 29) || (minutes >= 35 && minutes <= 40)) {
+		} else if ((minutes >= 23 && minutes <= 27) || (minutes >= 33 && minutes <= 37)) {
 			return 'twenty-five';
 		} else {
 			return 'half';

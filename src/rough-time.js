@@ -11,7 +11,7 @@ class RoughTime {
 		let roughTimeString = 'it is ';
 		let minutes = date.getMinutes();
 
-		if (minutes <= 3) {
+		if (minutes <= 2) {
 			roughTimeString += this._getHoursString(date.getHours());
 			roughTimeString += ' o\'clock';
 		} else {

@@ -15,7 +15,7 @@
   "bugs":{
     "url":"https://github.com/benhjt/rough-time/issues"
   },
-  "main":"dist/route-time.js",
+  "main":"dist/rough-time.js",
   "directories":{
     "test":"test"
   },

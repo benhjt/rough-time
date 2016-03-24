@@ -4,7 +4,7 @@ A simple and pointless JavaScript library for getting the "rough" time from a Ja
 in order to follow a great [tutorial](https://github.com/filipedeschamps/rss-feed-emitter/issues/119) by 
 [filipedeschamps](https://github.com/filipedeschamps/) on creating a JavaScript module from scratch in ES6, creating unit
 tests which are automated using [Travis](https://travis-ci.org/) and are also used to generate a code coverage report 
-using [https://codeclimate.com/].
+using [codeclimate](https://codeclimate.com/).
 
 ## Features
 * Simple interface

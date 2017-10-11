@@ -24,19 +24,23 @@ describe('RoughTime (unit)', () => {
     });
 
     it('should throw an error if the argument is not a Date object', () => {
-      expect(roughtime.getRoughTime.bind(undefined)).to.throw(Error);
-      expect(roughtime.getRoughTime.bind(null)).to.throw(Error);
-      expect(roughtime.getRoughTime.bind('bob')).to.throw(Error);
-      expect(roughtime.getRoughTime.bind(2345)).to.throw(Error);
-      expect(roughtime.getRoughTime.bind(false)).to.throw(Error);
-      expect(roughtime.getRoughTime.bind([1, 2, 3, 4])).to.throw(Error);
-      expect(roughtime.getRoughTime.bind({
+      expect(() => roughtime.getRoughTime(null)).to.throw('Date must be a JavaScript Date Object');
+      expect(() => roughtime.getRoughTime('bob')).to.throw('Date must be a JavaScript Date Object');
+      expect(() => roughtime.getRoughTime(2345)).to.throw('Date must be a JavaScript Date Object');
+      expect(() => roughtime.getRoughTime(false)).to.throw('Date must be a JavaScript Date Object');
+      expect(() => roughtime.getRoughTime([1, 2, 3, 4])).to.throw('Date must be a JavaScript Date Object');
+      expect(() => roughtime.getRoughTime({
         name: 'Bob'
-      })).to.throw(Error);
+      })).to.throw('Date must be a JavaScript Date Object');
     });
 
     it('should default to current time if a time is not entered', () => {
       expect(roughtime.getRoughTime()).to.equal(roughtime.getRoughTime(new Date()));
+    });
+
+    it('should return "o clock" when minutes is 0', () => {
+      const fixedDate = new Date(1504836000);
+      expect(roughtime.getRoughTime(fixedDate)).to.equal('it is ten o\'clock');
     });
   });
 

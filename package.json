@@ -15,14 +15,14 @@
   "bugs": {
     "url": "https://github.com/benhjt/rough-time/issues"
   },
-  "main": "dist/rough-time.js",
+  "main": "build/rough-time.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
     "test": "npm run coverage",
     "coverage": "babel-node node_modules/babel-istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- --timeout 30000 test/*.spec.js",
-    "build": "node_modules/.bin/babel src --out-dir dist",
+    "build": "node_modules/.bin/babel src --out-dir build",
     "prepublish": "npm run build"
   },
   "devDependencies": {
